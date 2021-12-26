@@ -8,6 +8,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/trucks/", require("./routes/trucksRoute"));
+app.use("/cars/", require("./routes/carsRoute"));
+app.use("/bikes/", require("./routes/bikesRoute"));
 app.use("/users/", require("./routes/usersRoute"));
 app.use("/bookings/", require("./routes/bookingsRoute"));
 
